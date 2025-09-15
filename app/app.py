@@ -3,10 +3,10 @@ from contextlib import asynccontextmanager
 from fastapi import Depends, FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from app.db import User, create_db_and_tables
-from app.schemas import UserCreate, UserRead, UserUpdate
-from app.users import jwt_backend, current_active_user, fastapi_users, cookie_backend
-from app.tasks_routers import tasks_router
+from db import User, create_db_and_tables
+from schemas import UserCreate, UserRead, UserUpdate
+from users import jwt_backend, current_active_user, fastapi_users, cookie_backend
+from tasks_routers import tasks_router
 
 
 
